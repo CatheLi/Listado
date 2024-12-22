@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/favicon/Bellota-icon.png">
+    <title>Lista_Tareas</title>
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+
+</head>
+
+<body>
+
+    <section class="contenedor-principal">
+
+        <!-- Contenedor principal de la lista -->
+        <section class="contenedor-lista-tareas">
+
+            <h1>Lista de Tareas</h1> <br>
+
+            <!-- Sección para ingresar nuevas tareas -->
+            <div class="mb-3">
+                <label for="campo-tarea" class="form-label">Ingresar Nueva Tarea</label>
+                <div class="grupo-entrada">
+                    <input type="text" class="form-control" id="campo-tarea"/> <br>
+                    <button class="btn btn-agregar" type="button" id="boton-agregar">Añadir</button>
+                </div>
+            </div>
+
+            <!-- Sección para mostrar el resumen de tareas -->
+            <div class="d-flex justify-content-between">
+                <div>
+                    Total de tareas: <span id="total-tareas-contador">0</span><br />
+                    Tareas completadas: <span id="tareas-completadas">0</span>
+                </div>
+            </div>
+
+            <hr />
+
+            <!-- Títulos de la lista -->
+            <section id="cabecera-lista">
+                <p>ID</p>
+                <p>Tarea</p>
+                <section id="acciones">
+                    <p>Hecho | Quitar</p>
+                </section>
+            </section>
+
+            <!-- Lista de tareas -->
+            <ul class="lista-tareas" id="lista-de-tareas"></ul>
+
+        </section>
+
+    </section>
+
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/f5bdbb41e0.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+        <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- JS -->
+    <script type="module" src="/assets/js/script.js"></script>
+
+</body>
+
+</html>

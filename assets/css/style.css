@@ -1,0 +1,52 @@
+/* Estilos generales */
+
+body {
+    font-family: sans-serif;
+    background-color: #f8f9fab2;
+}
+
+/* Contenedor principal */
+.contenedor-principal {
+    margin-top: 50px;
+}
+
+/* Contenedor de la lista */
+.contenedor-lista-tareas {
+    background-color: lightcyan;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para el botón de agregar */
+.grupo-entrada button {
+    background-color: #218838;
+    border-color: #28a745;
+}
+
+/* Estilo para la lista de tareas */
+.lista-tareas {
+    margin-top: 20px;
+}
+
+/* Cabecera de la lista de tareas */
+#cabecera-lista,
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+
+/* Estilo para las acciones de la lista */
+#acciones,
+#cajas {
+    display: flex;
+    flex-direction: row;
+}
+
+#acciones p,
+#checkbox {
+    margin: 0 0 0 20px;
+    cursor: pointer;
+}z
